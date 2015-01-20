@@ -110,10 +110,7 @@
               <p class="muted">Posted on {{ post.created_at|format_date }}</p>
 
               <div class="post-content" data-type-cleanup="true">
-                  {% set article = post.content|replace('<div>','') %}
-                  {% set article = article|replace('</div>','') %}
-                  {% set article = article|replace('<br/>','') %}
-                  {{ article }}
+                  {{ post.content }}
               </div>
 
             </div>
@@ -141,10 +138,7 @@
             <p class="muted">Posted on {{ post.created_at|format_date }}</p>
 
             <div class="post-content" data-type-cleanup="true">
-                {% set article = post.content|replace('<div>','') %}
-                {% set article = article|replace('</div>','') %}
-                {% set article = article|replace('<br/>','') %}
-                {{ article }}
+                {{ post.content }}
             </div>
 
             {{ theme.social.bar }}
