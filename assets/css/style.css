@@ -212,7 +212,7 @@ a.brand,
 a.brand:link,
 a.brand:visited {
   font-size: 20px;
-  color: #ffffff;
+  color: orange;
   text-shadow: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -221,7 +221,8 @@ a.brand:visited {
 a.brand:hover,
 a.brand:link:hover,
 a.brand:visited:hover {
-  color: #333;
+  color: orange;
+    text-decoration: underline;
 }
 .nav li a,
 .nav li a:link,
